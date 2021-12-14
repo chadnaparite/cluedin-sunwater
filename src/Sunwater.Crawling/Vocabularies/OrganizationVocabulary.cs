@@ -15,7 +15,7 @@ namespace CluedIn.Crawling.Sunwater.Vocabularies
             //TODO: Make sure that any properties mapped into CluedIn Vocabulary are not in the group.
             AddGroup("Sunwater Organization Details", group =>
             {
-                OrganizationUnitNumber = group.Add(new VocabularyKey("OrganizationUnitNumber", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
+                OrganizationUnitNumber = group.Add(new VocabularyKey("OrganizationUnitNumber", "Organization Unit Number", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 LocationCode = group.Add(new VocabularyKey("LocationCode", "Location Code", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 LocationCodeType = group.Add(new VocabularyKey("LocationCodeType", "Location Code Type", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 OrganizationBusinessUnit = group.Add(new VocabularyKey("OrganizationBusinessUnit", "Organization Business Unit", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));

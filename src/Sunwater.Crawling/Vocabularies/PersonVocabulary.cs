@@ -15,7 +15,7 @@ namespace CluedIn.Crawling.Sunwater.Vocabularies
             //TODO: Make sure that any properties mapped into CluedIn Vocabulary are not in the group.
             AddGroup("Sunwater Person Details", group =>
             {
-                WamiKey = group.Add(new VocabularyKey("WamiKey", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
+                WamiKey = group.Add(new VocabularyKey("WamiKey", "Wami Key", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 BarCode = group.Add(new VocabularyKey("BarCode", "Bar Code", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 BarDpid = group.Add(new VocabularyKey("BarDpid", "Bar DPID", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 BrithdayMonthDay = group.Add(new VocabularyKey("BrithdayMonthDay", "Brithday Month Day", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));

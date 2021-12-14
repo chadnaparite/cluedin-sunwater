@@ -16,7 +16,7 @@ namespace CluedIn.Crawling.Sunwater.Vocabularies
             //TODO: Make sure that any properties mapped into CluedIn Vocabulary are not in the group.
             AddGroup("Sunwater BasicDetails Details", group =>
             {
-                EmployeeNumber = group.Add(new VocabularyKey("EmployeeNumber", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
+                EmployeeNumber = group.Add(new VocabularyKey("EmployeeNumber", "Employee Number", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 ActualClassBanded = group.Add(new VocabularyKey("ActualClassBanded", "Actual Class Banded", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 ActualClassification = group.Add(new VocabularyKey("ActualClassification", "Actual Classification", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 ActualClassificationSort = group.Add(new VocabularyKey("ActualClassificationSort", "Actual Classification Sort", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
