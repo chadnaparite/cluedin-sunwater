@@ -119,6 +119,29 @@ namespace CluedIn.Crawling.Sunwater.ClueProducers
             data.Properties[personVocabulary.WorkMobile] = input.WorkMobile.PrintIfAvailable();
             data.Properties[personVocabulary.WorkPhone] = input.WorkPhone.PrintIfAvailable();
 
+            data.Properties[personVocabulary.Company] = input.Company.PrintIfAvailable();
+            data.Properties[personVocabulary.Division] = input.Division.PrintIfAvailable();
+            data.Properties[personVocabulary.Region] = input.Region.PrintIfAvailable();
+            data.Properties[personVocabulary.Location] = input.Location.PrintIfAvailable();
+            data.Properties[personVocabulary.Site] = input.Site.PrintIfAvailable();
+            data.Properties[personVocabulary.FirstName] = input.FirstName.PrintIfAvailable();
+            data.Properties[personVocabulary.LatName] = input.LatName.PrintIfAvailable();
+            data.Properties[personVocabulary.Username] = input.Username.PrintIfAvailable();
+            data.Properties[personVocabulary.EmployeeId] = input.EmployeeId.PrintIfAvailable();
+            data.Properties[personVocabulary.Email] = input.Email.PrintIfAvailable();
+            data.Properties[personVocabulary.Phone] = input.Phone.PrintIfAvailable();
+            data.Properties[personVocabulary.SsoUser] = input.SsoUser.PrintIfAvailable();
+            data.Properties[personVocabulary.Password] = input.Password.PrintIfAvailable();
+            data.Properties[personVocabulary.RetypePassword] = input.RetypePassword.PrintIfAvailable();
+            data.Properties[personVocabulary.LoginRequired] = input.LoginRequired?.PrintIfAvailable();
+            data.Properties[personVocabulary.Affiliation] = input.Affiliation.PrintIfAvailable();
+            data.Properties[personVocabulary.Archived] = input.Archived.PrintIfAvailable();
+            data.Properties[personVocabulary.Occupation] = input.Occupation.PrintIfAvailable();
+            data.Properties[personVocabulary.SecondaryOccupation] = input.SecondaryOccupation.PrintIfAvailable();
+            data.Properties[personVocabulary.ExtractGroups] = input.Groups.PrintIfAvailable();
+            data.Properties[personVocabulary.Locale] = input.Locale.PrintIfAvailable();
+            data.Properties[personVocabulary.Manager] = input.Manager.PrintIfAvailable();
+
             return clue;
         }
     }
