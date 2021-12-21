@@ -4,6 +4,7 @@ using CluedIn.Crawling.Factories;
 using CluedIn.Crawling.Helpers;
 using CluedIn.Crawling.Sunwater.Vocabularies;
 using CluedIn.Crawling.Sunwater.Core.Models;
+using CluedIn.Crawling.Sunwater.Core.Constants;
 
 namespace CluedIn.Crawling.Sunwater.ClueProducers
 {
@@ -37,11 +38,11 @@ namespace CluedIn.Crawling.Sunwater.ClueProducers
             // }
 
             //TODO: Examples of edge creation
-            // if (input.MobilePhone != null)
-            // {
-            //     factory.CreateIncomingEntityReference(clue, EntityType.PhoneNumber, EntityEdgeType.Parent, input.MobilePhone, input.MobilePhone);
-            //     data.Properties[basicdetailsVocabulary.MobilePhone] = input.MobilePhone.PrintIfAvailable();
-            // }
+            if (input.ActualPositionNumber != null)
+                factory.CreateIncomingEntityReference(clue, SunwaterEntities.Position, EntityEdgeType.OwnedBy, input.ActualPositionNumber, input.ActualPositionNumber);
+            
+            if (input.ActualOrganisationalUnitNumber != null)
+                factory.CreateIncomingEntityReference(clue, EntityType.Organization, EntityEdgeType.OwnedBy, input.ActualOrganisationalUnitNumber, input.ActualOrganisationalUnitNumber);
 
             // if (input.WorkPhone != null)
             // {

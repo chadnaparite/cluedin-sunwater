@@ -38,11 +38,9 @@ namespace CluedIn.Crawling.Sunwater.ClueProducers
             // }
 
             //TODO: Examples of edge creation
-            // if (input.MobilePhone != null)
-            // {
-            //     factory.CreateIncomingEntityReference(clue, EntityType.PhoneNumber, EntityEdgeType.Parent, input.MobilePhone, input.MobilePhone);
-            //     data.Properties[positionVocabulary.MobilePhone] = input.MobilePhone.PrintIfAvailable();
-            // }
+            if (input.OrganisationUnitNumber != null)
+                factory.CreateIncomingEntityReference(clue, EntityType.Organization, EntityEdgeType.OwnedBy, input.OrganisationUnitNumber, input.OrganisationUnitNumber);
+
 
             // if (input.WorkPhone != null)
             // {
