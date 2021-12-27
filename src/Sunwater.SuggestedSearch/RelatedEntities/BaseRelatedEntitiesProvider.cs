@@ -34,10 +34,12 @@ namespace CluedIn.SuggestedSearch.Sunwater.RelatedEntities
                     {
                         if (RelatedEntitiesUtility.CypherFluentQueriesCount(suggestedSearch.SearchQuery, suggestedSearch.Tokens, context) > 0)
                             searches.Add(suggestedSearch);
+                        else
+                            Log.LogInformation($"[Related Entities] No result: {suggestedSearch.SearchQuery}");
                     }
                     catch (Exception ex)
                     {
-                        Log.LogCritical(ex, "Error in executing Suggested Search: " + suggestedSearch.DisplayName);
+                        Log.LogCritical(ex, "[Related Entities] Error in executing Suggested Search: " + suggestedSearch.DisplayName);
                     }
                 }
 
