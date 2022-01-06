@@ -17,12 +17,12 @@ namespace CluedIn.SuggestedSearch.Sunwater.RelatedEntities
         {
             return new List<DataStore.Document.Models.SuggestedSearch>
             {
-                relatedEntitiesHelper.GetRelationshipForEntity("Suggested Search", EntityEdgeType.OwnedBy),
-                relatedEntitiesHelper.GetRelationshipForEntityOfMultipleTypes("Suggested for Position and Organization", EntityEdgeType.OwnedBy, SunwaterEntities.Position, EntityType.Organization),
-                relatedEntitiesHelper.GetRelationshipForEntityOfType("Suggested for Position", EntityEdgeType.OwnedBy, SunwaterEntities.Position),
-                relatedEntitiesHelper.GetRelationshipForEntityOfType("Suggested for Organization", EntityEdgeType.OwnedBy, EntityType.Organization),
-                relatedEntitiesHelper.GetRelationshipForEntityOfTypeFromEntityOfType("Suggested From Entity Position", EntityEdgeType.OwnedBy, SunwaterEntities.Position, EntityType.Organization),
-                relatedEntitiesHelper.GetRelationshipForEntityOfTypeToEntityOfType("Suggested To Entity Position", EntityEdgeType.OwnedBy, SunwaterEntities.Position, EntityType.Organization),
+                RelatedEntitiesHelper.GetRelationshipForEntity("Suggested Search", EntityEdgeType.OwnedBy),
+                RelatedEntitiesHelper.GetRelationshipForEntityOfMultipleTypes("Suggested for Position and Organization", EntityEdgeType.OwnedBy, SunwaterEntities.Position, EntityType.Organization),
+                RelatedEntitiesHelper.GetRelationshipForEntityOfType("Suggested for Position", EntityEdgeType.OwnedBy, SunwaterEntities.Position),
+                RelatedEntitiesHelper.GetRelationshipForEntityOfType("Suggested for Organization", EntityEdgeType.OwnedBy, EntityType.Organization),
+                //relatedEntitiesHelper.GetRelationshipForEntityOfTypeFromEntityOfType("Suggested From Entity Position", EntityEdgeType.OwnedBy, SunwaterEntities.Position, EntityType.Organization),
+                //relatedEntitiesHelper.GetRelationshipForEntityOfTypeToEntityOfType("Suggested To Entity Position", EntityEdgeType.OwnedBy, SunwaterEntities.Position, EntityType.Organization),
             };
         }
     }
