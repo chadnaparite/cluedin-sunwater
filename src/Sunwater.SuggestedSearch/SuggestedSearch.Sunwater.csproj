@@ -11,5 +11,6 @@
     <PackageReference Include="CluedIn.Server.Common.WebApi" />
     <PackageReference Include="CluedIn.Agent" />
     <PackageReference Include="CluedIn.RelatedEntities" />
+    <PackageReference Include="CluedIn.RelatedEntities2" />
   </ItemGroup>
 </Project>
