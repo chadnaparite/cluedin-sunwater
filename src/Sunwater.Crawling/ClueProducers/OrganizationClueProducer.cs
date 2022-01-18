@@ -33,6 +33,8 @@ namespace CluedIn.Crawling.Sunwater.ClueProducers
             if (input.OrganizationUnitDescription != null)
                 data.Description = input.OrganizationUnitDescription;
 
+            data.Codes.Add(new EntityCode(EntityType.Organization, SunwaterConstants.CodeOrigin, input.OrganizationUnitNumber));
+
             if (input.OrganizationUnit != null)
                 data.Codes.Add(new EntityCode(EntityType.Organization, SunwaterConstants.CodeOrigin, input.OrganizationUnit));
 
@@ -43,40 +45,37 @@ namespace CluedIn.Crawling.Sunwater.ClueProducers
             // }
 
             if (input.SuperiorOrgUnitNumber != null)
-                factory.CreateIncomingEntityReference(clue, EntityType.Organization, EntityEdgeType.OwnedBy, input.SuperiorOrgUnitNumber, input.SuperiorOrgUnitNumber);
+                factory.CreateIncomingEntityReference(clue, EntityType.Organization, "/SuperiorOrgOf", input.SuperiorOrgUnitNumber, input.SuperiorOrgUnitNumber);
             
             if (input.OrganizationUnitLevel01 != null)
-                factory.CreateIncomingEntityReference(clue, EntityType.Organization, EntityEdgeType.OwnedBy, input.OrganizationUnitLevel01, input.OrganizationUnitLevel01);
-            
-            if (input.OrganizationUnitLevel01 != null)
-                factory.CreateIncomingEntityReference(clue, EntityType.Organization, EntityEdgeType.OwnedBy, input.OrganizationUnitLevel01, input.OrganizationUnitLevel01);
+                factory.CreateIncomingEntityReference(clue, EntityType.Organization, "/HierarchyLvl01", input.OrganizationUnitLevel01, input.OrganizationUnitLevel01);
             
             if (input.OrganizationUnitLevel02 != null)
-                factory.CreateIncomingEntityReference(clue, EntityType.Organization, EntityEdgeType.OwnedBy, input.OrganizationUnitLevel02, input.OrganizationUnitLevel02);
+                factory.CreateIncomingEntityReference(clue, EntityType.Organization, "/HierarchyLvl02", input.OrganizationUnitLevel02, input.OrganizationUnitLevel02);
             
             if (input.OrganizationUnitLevel03 != null)
-                factory.CreateIncomingEntityReference(clue, EntityType.Organization, EntityEdgeType.OwnedBy, input.OrganizationUnitLevel03, input.OrganizationUnitLevel03);
+                factory.CreateIncomingEntityReference(clue, EntityType.Organization, "/HierarchyLvl03", input.OrganizationUnitLevel03, input.OrganizationUnitLevel03);
             
             if (input.OrganizationUnitLevel04 != null)
-                factory.CreateIncomingEntityReference(clue, EntityType.Organization, EntityEdgeType.OwnedBy, input.OrganizationUnitLevel04, input.OrganizationUnitLevel04);
+                factory.CreateIncomingEntityReference(clue, EntityType.Organization, "/HierarchyLvl04", input.OrganizationUnitLevel04, input.OrganizationUnitLevel04);
             
             if (input.OrganizationUnitLevel05 != null)
-                factory.CreateIncomingEntityReference(clue, EntityType.Organization, EntityEdgeType.OwnedBy, input.OrganizationUnitLevel05, input.OrganizationUnitLevel05);
+                factory.CreateIncomingEntityReference(clue, EntityType.Organization, "/HierarchyLvl05", input.OrganizationUnitLevel05, input.OrganizationUnitLevel05);
             
             if (input.OrganizationUnitLevel06 != null)
-                factory.CreateIncomingEntityReference(clue, EntityType.Organization, EntityEdgeType.OwnedBy, input.OrganizationUnitLevel06, input.OrganizationUnitLevel06);
+                factory.CreateIncomingEntityReference(clue, EntityType.Organization, "/HierarchyLvl06", input.OrganizationUnitLevel06, input.OrganizationUnitLevel06);
             
             if (input.OrganizationUnitLevel07 != null)
-                factory.CreateIncomingEntityReference(clue, EntityType.Organization, EntityEdgeType.OwnedBy, input.OrganizationUnitLevel07, input.OrganizationUnitLevel07);
+                factory.CreateIncomingEntityReference(clue, EntityType.Organization, "/HierarchyLvl07", input.OrganizationUnitLevel07, input.OrganizationUnitLevel07);
             
             if (input.OrganizationUnitLevel08 != null)
-                factory.CreateIncomingEntityReference(clue, EntityType.Organization, EntityEdgeType.OwnedBy, input.OrganizationUnitLevel08, input.OrganizationUnitLevel08);
+                factory.CreateIncomingEntityReference(clue, EntityType.Organization, "/HierarchyLvl08", input.OrganizationUnitLevel08, input.OrganizationUnitLevel08);
             
             if (input.OrganizationUnitLevel09 != null)
-                factory.CreateIncomingEntityReference(clue, EntityType.Organization, EntityEdgeType.OwnedBy, input.OrganizationUnitLevel09, input.OrganizationUnitLevel09);
+                factory.CreateIncomingEntityReference(clue, EntityType.Organization, "/HierarchyLvl09", input.OrganizationUnitLevel09, input.OrganizationUnitLevel09);
             
             if (input.OrganizationUnitLevel10 != null)
-                factory.CreateIncomingEntityReference(clue, EntityType.Organization, EntityEdgeType.OwnedBy, input.OrganizationUnitLevel10, input.OrganizationUnitLevel10);
+                factory.CreateIncomingEntityReference(clue, EntityType.Organization, "/HierarchyLvl10", input.OrganizationUnitLevel10, input.OrganizationUnitLevel10);
 
             //TODO: Example of PersonReference
             //  if (input.UpdatedBy != null)

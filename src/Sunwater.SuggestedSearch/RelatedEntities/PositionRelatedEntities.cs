@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using CluedIn.Core.Data;
 using CluedIn.Crawling.Sunwater.Core.Constants;
-using CluedIn.RelatedEntities2;
 
 namespace CluedIn.SuggestedSearch.Sunwater.RelatedEntities
 {
