@@ -43,6 +43,9 @@ namespace CluedIn.Crawling.Sunwater.ClueProducers
             
             if (input.ActualOrganisationalUnitNumber != null)
                 factory.CreateIncomingEntityReference(clue, EntityType.Organization, EntityEdgeType.OwnedBy, input.ActualOrganisationalUnitNumber, input.ActualOrganisationalUnitNumber);
+            
+            if (input.WamiKey != null)
+                factory.CreateIncomingEntityReference(clue, EntityType.Person, EntityEdgeType.OwnedBy, input.WamiKey, input.WamiKey);
 
             // if (input.WorkPhone != null)
             // {
@@ -112,7 +115,7 @@ namespace CluedIn.Crawling.Sunwater.ClueProducers
             data.Properties[basicdetailsVocabulary.PayBranch] = input.PayBranch.PrintIfAvailable();
             data.Properties[basicdetailsVocabulary.PayEntity] = input.PayEntity.PrintIfAvailable();
             data.Properties[basicdetailsVocabulary.Payroll] = input.Payroll.PrintIfAvailable();
-            data.Properties[basicdetailsVocabulary.PersonNumber] = input.PersonNumber.PrintIfAvailable();
+            data.Properties[basicdetailsVocabulary.WamiKey] = input.WamiKey.PrintIfAvailable();
             data.Properties[basicdetailsVocabulary.PrimaryCostCode] = input.PrimaryCostCode.PrintIfAvailable();
             data.Properties[basicdetailsVocabulary.PrimaryRole] = input.PrimaryRole.PrintIfAvailable();
             data.Properties[basicdetailsVocabulary.RegionCode] = input.RegionCode.PrintIfAvailable();

@@ -60,7 +60,7 @@ namespace CluedIn.Crawling.Sunwater.Vocabularies
                 PayBranch = group.Add(new VocabularyKey("PayBranch", "Pay Branch", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 PayEntity = group.Add(new VocabularyKey("PayEntity", "Pay Entity", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 Payroll = group.Add(new VocabularyKey("Payroll", "Payroll", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
-                PersonNumber = group.Add(new VocabularyKey("PersonNumber", "Person Number", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
+                WamiKey = group.Add(new VocabularyKey("WamiKey", "Wami Key", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 PrimaryCostCode = group.Add(new VocabularyKey("PrimaryCostCode", "Primary Cost Code", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 PrimaryRole = group.Add(new VocabularyKey("PrimaryRole", "Primary Role", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 RegionCode = group.Add(new VocabularyKey("RegionCode", "Region Code  ", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
@@ -136,7 +136,7 @@ namespace CluedIn.Crawling.Sunwater.Vocabularies
         public VocabularyKey PayBranch { get; private set; }
         public VocabularyKey PayEntity { get; private set; }
         public VocabularyKey Payroll { get; private set; }
-        public VocabularyKey PersonNumber { get; private set; }
+        public VocabularyKey WamiKey { get; private set; }
         public VocabularyKey PrimaryCostCode { get; private set; }
         public VocabularyKey PrimaryRole { get; private set; }
         public VocabularyKey RegionCode { get; private set; }

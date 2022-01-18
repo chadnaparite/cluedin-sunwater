@@ -16,6 +16,7 @@ namespace CluedIn.Crawling.Sunwater.Vocabularies
             AddGroup("Sunwater Organization Details", group =>
             {
                 OrganizationUnitNumber = group.Add(new VocabularyKey("OrganizationUnitNumber", "Organization Unit Number", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
+                SuperiorOrgUnitNumber = group.Add(new VocabularyKey("SuperiorOrgUnitNumber", "Superior Organization Unit Number", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 LocationCode = group.Add(new VocabularyKey("LocationCode", "Location Code", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 LocationCodeType = group.Add(new VocabularyKey("LocationCodeType", "Location Code Type", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
                 OrganizationBusinessUnit = group.Add(new VocabularyKey("OrganizationBusinessUnit", "Organization Business Unit", VocabularyKeyDataType.Text, VocabularyKeyVisibility.Visible));
@@ -44,6 +45,7 @@ namespace CluedIn.Crawling.Sunwater.Vocabularies
         }
         
         public VocabularyKey OrganizationUnitNumber { get; private set; }
+        public VocabularyKey SuperiorOrgUnitNumber { get; private set; }
         public VocabularyKey LocationCode { get; private set; }
         public VocabularyKey LocationCodeType { get; private set; }
         public VocabularyKey OrganizationBusinessUnit { get; private set; }

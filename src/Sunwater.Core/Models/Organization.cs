@@ -5,6 +5,7 @@ namespace CluedIn.Crawling.Sunwater.Core.Models
     public class Organization 
     {
         public string OrganizationUnitNumber {get; set;}
+        public string SuperiorOrgUnitNumber { get; set;}
         public string LocationCode { get; set; }
         public string LocationCodeType { get; set; }
         public string OrganizationBusinessUnit { get; set; }

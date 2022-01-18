@@ -48,7 +48,7 @@ namespace CluedIn.Crawling.Sunwater.Core.Models
         public string PayBranch { get; set; }
         public string PayEntity { get; set; }
         public string Payroll { get; set; }
-        public string PersonNumber { get; set; }
+        public string WamiKey { get; set; }
         public string PrimaryCostCode { get; set; }
         public string PrimaryRole { get; set; }
         public string RegionCode { get; set; }
