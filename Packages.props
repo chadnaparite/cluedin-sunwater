@@ -2,7 +2,7 @@
   <PropertyGroup Label="Dependency Versions">
     <_ComponentHost>2.0.0-*</_ComponentHost>
     <_AutoFixture>4.11.0</_AutoFixture>
-    <_CluedIn>3.2.5</_CluedIn>
+    <_CluedIn>3.3.0</_CluedIn>
     <_CluedInPrevious>3.2.0-*</_CluedInPrevious>
   </PropertyGroup>
 
@@ -36,6 +36,7 @@
     <PackageReference Update="CluedIn.Server.Common.WebApi" Version="$(_CluedIn)" />
     <PackageReference Update="CluedIn.Agent" Version="$(_CluedIn)" />
     <PackageReference Update="CluedIn.RelatedEntities" Version="$(_CluedIn)" />
+    <PackageReference Update="CluedIn.Processing" Version="$(_CluedIn)" />
 
   </ItemGroup>
 </Project>
